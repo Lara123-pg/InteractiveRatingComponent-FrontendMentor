@@ -62,40 +62,39 @@ export function InterativeRating() {
     return(
         <div className='container'>
             <div className='card'>
-                { buttonSubmit ? <ThankYouStatePage onFeedbackSelected={buttonSelected} />
+                { buttonSubmit ? 
+                    <ThankYouStatePage onFeedbackSelected={buttonSelected} />
                 :
 
-                (
-                    <>
-                        <header>
-                            <span><img src={StarIcon} alt="Orange Star Icon"/></span>
-                        </header>
+                    (
+                        <>
+                            <header>
+                                <span><img src={StarIcon} alt="Orange Star Icon"/></span>
+                            </header>
 
-                        <main>
-                            <h1>How did we do?</h1>
+                            <main>
+                                <h1>How did we do?</h1>
 
-                            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+                                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
 
-                            <div className='buttons'>
-                                <button className='notClickedButton' type='button' id='button1' onClick={handleClickedButton}>1</button>
-                                <button className='notClickedButton' type='button' id='button2' onClick={handleClickedButton}>2</button>
-                                <button className='notClickedButton' type='button' id='button3' onClick={handleClickedButton}>3</button>
-                                <button className='notClickedButton' type='button' id='button4' onClick={handleClickedButton}>4</button>
-                                <button className='notClickedButton' type='button' id='button5' onClick={handleClickedButton}>5</button>
-                            </div>
+                                <div className='buttons'>
+                                    <button className='notClickedButton' type='button' id='button1' onClick={handleClickedButton}>1</button>
+                                    <button className='notClickedButton' type='button' id='button2' onClick={handleClickedButton}>2</button>
+                                    <button className='notClickedButton' type='button' id='button3' onClick={handleClickedButton}>3</button>
+                                    <button className='notClickedButton' type='button' id='button4' onClick={handleClickedButton}>4</button>
+                                    <button className='notClickedButton' type='button' id='button5' onClick={handleClickedButton}>5</button>
+                                </div>
 
-                            <ButtonSubmit 
-                                onClick={handleSentFeedback} 
-                                id='buttonSubmit'
-                                type='button'
-                            >
-                                    SUBMIT
-                            </ButtonSubmit>
-                        </main>
-                    </>
-                )
-
-            
+                                <ButtonSubmit 
+                                    onClick={handleSentFeedback} 
+                                    id='buttonSubmit'
+                                    type='button'
+                                >
+                                        SUBMIT
+                                </ButtonSubmit>
+                            </main>
+                        </>
+                    )
                 }
                 
             </div>
