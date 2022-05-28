@@ -1,0 +1,74 @@
+@import './variables.scss';
+@import './display';
+@import './fontColor';
+@import './styleWH';
+
+div.containerThank {
+    @include Display(center, center);
+
+    height: 100vh;
+
+    div.cardThank {
+        @include StyleWH(400px, 400px);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: $color5;
+
+        border-radius: 30px;
+
+        margin: 1em 0 0 -2em;
+
+        padding-top: 2em;
+
+        header {
+            @include Display(space-around, center, column);
+ 
+            height: 210px;
+
+            img {
+                @include StyleWH(200px, 120px);
+            }
+
+            span {
+                @include FontColor($color1, 0.9rem, 400);
+
+                background-color: $color6;
+
+                border-radius: 20px;
+
+                padding: 0.5em;
+
+                padding-left: 1.5em;
+                padding-right: 1.5em;
+
+                margin-bottom: 1em;
+        
+                text-align: center;
+            }
+        }
+
+        main {
+            @include Display(space-around, center, column);
+            @include StyleWH(90%, 35%);
+
+            margin-left: -1em;
+
+            strong {
+                @include FontColor($color2, 1.6rem, 700);
+            }
+
+            p {
+                @include FontColor($color3, 0.9rem, 700);
+
+                text-align: center;
+
+                width: 380px;
+
+                padding: 1em;
+            }
+        }
+    }
+}

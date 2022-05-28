@@ -1,0 +1,85 @@
+@import './global';
+@import './variables.scss';
+@import './display';
+@import './fontColor';
+@import './styleWH';
+
+div.container {
+    @include Display(center, center);
+
+    height: 100vh;
+
+    div.card {
+        @include Display(space-around, flex-start, column);
+        @include StyleWH(400px, 400px);
+
+        background-color: $color5;
+
+        border-radius: 30px;
+
+        padding: 0 0 1em 2em;
+
+        header {
+            @include Display(flex-start, flex-end);
+            @include StyleWH(100%, 60px);
+
+            span {
+                background-color: $color6;
+
+                border-radius: 50px;
+
+                padding: 1em 1.1em;
+            }
+        }
+
+        main {
+            @include Display(space-between, '', column);
+
+            height: 220px;
+
+            h1 {
+                @include FontColor($color2, 1.5rem, 700);
+            }
+
+            p {
+                @include FontColor($color3, 0.9rem, 400);
+
+                width: 320px;
+            }
+
+            div.buttons {
+                @include Display(space-between);
+
+                button {
+                    padding: 0.8em 1.1em;
+
+                    border: 0;
+                    border-radius: 50px;
+
+                    font-size: 1rem;
+                    font-weight: 700; 
+                } 
+
+                button.clickedButton {
+                    background-color: $color4;
+
+                    color: $color2;
+                }
+
+                button.notClickedButton {
+                    background-color: $color7;
+                    
+                    color: $color3;
+
+                    &:hover {
+                        cursor: pointer;
+
+                        background-color: $color1;
+
+                        color: $color2;
+                    }
+                }
+            }
+        }
+    }
+}
