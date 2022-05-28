@@ -27,7 +27,7 @@ Logo em seguida, o projeto estará em seu editor para ser executado.
 
 # Projeto
 
-Interactive Rating Component é um desafio da plataforma FrontendMentor, que tem o objetivo de treinar os conceitos Frontend. E para que essa página fosse desenvolvida, foi utilizado ReactJS juntamente com o JavaScript o Sass(Pré-processador CSS) também e além disso, foi utilizado conceitos de styled components.
+Interactive Rating Component é um desafio da plataforma FrontendMentor, que tem o objetivo de treinar os conceitos Frontend. E para que essa página fosse desenvolvida, foi utilizado ReactJS juntamente com o JavaScript, o Sass(Pré-processador CSS) também e além disso, foi utilizado conceitos de styled components.
 
 # Link do projeto hospedado
 
