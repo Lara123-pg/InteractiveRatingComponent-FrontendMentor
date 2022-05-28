@@ -99,6 +99,11 @@ export function InterativeRating() {
                 }
                 
             </div>
+
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/Lara123-pg">Lara Fernanda</a>.
+            </div>
         </div>
     );
 }

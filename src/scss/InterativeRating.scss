@@ -5,7 +5,7 @@
 @import './styleWH';
 
 div.container {
-    @include Display(center, center);
+    @include Display(space-around, center, column);
 
     height: 100vh;
 
